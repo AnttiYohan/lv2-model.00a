@@ -1,16 +1,6 @@
-@prefix lv2:    <https://prototyper.tech>
-@prefix doap: <https://prototyper.tech/slider-nine>
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#>
+@prefix rdfs:   <http://www.w3.org/2000/01/red-schema#>
 
 <http://ll-plugins.nongu.org/lv2/lv2pftci/finalpass>
 a lv2:Plugin;
-lv2:binary <finalpass.so>;
-doap:name "fpass";
-doap:licance <http://usefulinc.com/doap/licances/gpl>;
-
-lv2:port 
-[
-    a lv2:AudioPort, lv2:OutputPort;
-    lv2:index 0;
-    lv2:symbol "output";
-    lv2:name "Output";
-]
+rdfs:seeAlso <finalpass.tll>
